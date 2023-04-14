@@ -1,8 +1,8 @@
 # Databases-Comparison-Tool
   Database Comparison Tool
 ## Codepen Demo Pages 
-- [Home](https://codepen.io/Ridevrutahc/pen/BaqjexW) 
-- [DBConnect](https://codepen.io/Ridevrutahc/pen/poxgGxV)
-- [UserRegistration]()
-- [ServerConnect]()
-- [TableView]()
+- [x] [Home](https://codepen.io/Ridevrutahc/pen/BaqjexW) 
+- [x] [DBConnect](https://codepen.io/Ridevrutahc/pen/poxgGxV)
+- [ ] UserRegistration
+- [ ] ServerConnect
+- [ ] TableView
