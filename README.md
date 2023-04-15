@@ -22,5 +22,4 @@
 - [x] [Home](https://codepen.io/Ridevrutahc/pen/BaqjexW) 
 - [x] [DBConnect](https://codepen.io/Ridevrutahc/pen/poxgGxV)
 - [x] [ServerConnect](https://codepen.io/Ridevrutahc/pen/vYVGmyo)
-- [ ] UserRegistration
 - [ ] TableView
