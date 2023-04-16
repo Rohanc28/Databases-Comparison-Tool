@@ -1,4 +1,3 @@
-
 console.log("new")
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.querySelector('#toggleBtn');
@@ -6,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   const foot = document.querySelector('footer');
   const footText = document.querySelector('#foottext');
+  //const tableView= document.querySelector('#table-row');
+  
   
   toggleBtn.addEventListener('click', () => {
     body.classList.toggle('bg-secondary');
@@ -13,39 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('bg-dark');
     foot.classList.toggle('bg-dark');
     footText.classList.toggle('text-secondary');
+    //tableView.classList.toggle('table-dark');
     
     if (toggleBtn.innerHTML === 'Dark Mode') {
       toggleBtn.innerHTML = 'Light Mode';
     } else {
       toggleBtn.innerHTML = 'Dark Mode';
     }
-  });
-  
-  // get the form element
-  const form = document.getElementById('server-form');
-  
- // add a submit event listener to the form
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // get the input fields
-    const serverName = document.getElementById('serverName').value;
-    const databaseName = document.getElementById('databaseName').value;
-    const username = document.getElementById('userName').value;
-    const password = document.getElementById('password').value;
-    
-    
-    // check if both database1 and database2 are filled
-    if (username && password && databaseName && serverName) {
-      alert(`Inputs: \n${serverName} \n${databaseName} \n${username} \n${password}`);
-      console.log("CODE AFTER ALERT ENDS");
-    }
-    else {
-      alert(`Multiple invalid field inputs`);
-      console.log("CODE AFTER ALERT ENDS");
-    }
-    //if both blank
-    
   });
 });
 
@@ -93,10 +68,12 @@ function loadCSV(file) {
 
     // Create the HTML table
     const table = document.createElement('table');
-    table.classList.add('table', 'table-striped');
+    table.classList.add('table', 'table-striped','bg-light');
+    
 
     // Create the table header
     const thead = document.createElement('thead');
+    thead.classList.add('thead-dark');
     const headerRow = document.createElement('tr');
     rows[0].forEach(header => {
       const th = document.createElement('th');
@@ -108,6 +85,7 @@ function loadCSV(file) {
 
     // Create the table body
     const tbody = document.createElement('tbody');
+    tbody.setAttribute('id','table-row');
     rows.slice(1).forEach(rowData => {
       const row = document.createElement('tr');
       rowData.forEach(cellData => {
