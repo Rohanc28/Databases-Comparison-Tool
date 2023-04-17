@@ -32,19 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const username = document.getElementById('userName').value;
     const password = document.getElementById('password').value;
     
+    // make sure user has selected an option
     
-    // check if both database1 and database2 are filled
-    if (username && password && databaseName && serverName) {
+     if(serverName == "Choose...") {
+      alert(`Please Select Server`);
+      console.log("CODE AFTER ALERT ENDS");
+    }
+    
+    // check if are filled
+    else if (username && password && databaseName && serverName) {
       alert(`Inputs: \n${serverName} \n${databaseName} \n${username} \n${password}`);
       console.log("CODE AFTER ALERT ENDS");
     }
-     // check if only database1 is filled
-    else {
-      alert(`Multiple invalid field inputs`);
-      console.log("CODE AFTER ALERT ENDS");
-    }
-    //if both blank
-    
+   
 
   });
 });
