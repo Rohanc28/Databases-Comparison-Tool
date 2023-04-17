@@ -44,50 +44,58 @@
   </nav>
 <!-- MAIN BODY STARTS HERE -->
   <div class="container my-5">
-    <div class="row">
+    <div class="col">
       <div class="col-md-6 offset-md-3">
         <!-- HEADING FOR DIV> -->
         <h2 class="text-center mb-4">Database Comparison User Tool</h2>
-        
+      </div>
         
 <div class="container">
   <div class="row">
     <!-- First form and table -->
     <div class="col">
 <!-- FORM TO UPLOAD CSV FILE -->
-        <form class="mx-auto">
+        <form >
           <div class="form-group">
-            <label for="csvFileInput">Select CSV file:</label>
+            <label for="csvFileInput">Select file:</label>
             <input type="file" class="form-control-file" id="file-input1">
           </div>
           <button type="button" class="btn btn-primary" onclick="loadCSV1()">Load CSV</button>
         </form>
-
-        <!-- TABLE TO DISPLAY CSV DATA -->
-        <table id="content1" class="table table-bordered mt-4 d-none text-light">
-        </table>
     </div>
-        
-        
-        
-        <div class="col">
-         <form class="mx-auto">
+      <div class="col">
+      <!---->
+      <form >
           <div class="form-group">
-            <label for="csvFileInput">Select CSV file:</label>
+            <label for="csvFileInput">Select file:</label>
             <input type="file" class="form-control-file" id="file-input2">
           </div>
           <button type="button" class="btn btn-primary" onclick="loadCSV2()">Load CSV</button>
         </form>
-
-        <!-- TABLE TO DISPLAY CSV DATA -->
+    </div>
+    
+    
+  </div>
+  <div class="row">
+    
+    <div class="col">
+       <!-- TABLE TO DISPLAY CSV DATA -->
+        <table id="content1" class="table table-bordered mt-4 d-none text-light">
+        </table>
+    </div>
+    <div class="col">
+      <!-- TABLE TO DISPLAY CSV DATA -->
         <table id="content2" class="table table-bordered mt-4 d-none text-light">
         </table>
     </div>
+    </div>
+    
+    
+
   </div>
  </div>
       </div>
     </div>
-  </div>
 
     <footer class="footer mt-auto py-3 bg-secondary">
     <div class="container text-center ">
