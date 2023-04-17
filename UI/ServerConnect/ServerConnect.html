@@ -51,11 +51,22 @@
         <form id="server-form">
           <div class="form-group">
             <label for="serverName">Server Name:</label>
-            <input type="text" class="form-control" id="serverName" placeholder="Enter Server name" name="serverName" required>
+            <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="serverName" required>
+    <option selected disabled hidden>Choose...</option>
+    <option value="1">OracleDB</option>
+    <option value="2">MongoDB</option>
+    <option value="3">PostgresSQL</option>
+  </select>
+</div>
+    
           </div>
           <div class="form-group">
-            <label for="databaseName">Database Name:</label>
-            <input type="text" class="form-control" id="databaseName" placeholder="Enter Database name" name="databaseName" required>
+            <label for="databaseName">Database Connection:</label>
+            <input type="text" class="form-control" id="databaseName" placeholder="Enter Database link" name="databaseName" required>
           </div>
           <div class="form-group">
             <label for="userName" required >Username:</label>
