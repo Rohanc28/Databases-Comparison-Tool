@@ -24,5 +24,6 @@
 - [x] [ServerConnect](https://codepen.io/Ridevrutahc/pen/vYVGmyo)
 - [x] [TableView](https://codepen.io/Ridevrutahc/pen/OJBNzeL)
 
-## Currently working on: 
-Added both table renderview, added support for xlsx in both, currently working on ui to show both files parallely when uploaded in med-large res
+## Recent: 
+- Added both table renderview, added support for csv, xlsx in both
+- ui to show both files parallely when uploaded in med-large res and stay responsive for small screen as well
