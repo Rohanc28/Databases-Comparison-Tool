@@ -7,17 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Database Comparison Tool</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="ServerConnect_style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
     <a class="navbar-brand" href="#">Database Comparison Tool</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -35,13 +32,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Sign in</a>
         </li>
-      </ul> 
+      </ul>
       <div class="d-flex">
         <button id="toggleBtn" class="btn btn-outline-light">Dark Mode</button>
       </div>
     </div>
   </nav>
-<!-- MAIN BODY STARTS HERE -->
+  <!-- MAIN BODY STARTS HERE -->
   <div class="container my-5">
     <div class="row">
       <div class="col-md-6 offset-md-3">
@@ -52,54 +49,61 @@
           <div class="form-group">
             <label for="serverName">Server Name:</label>
             <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-  </div>
-  <select class="custom-select" id="serverName" required>
-    <option selected disabled hidden>Choose...</option>
-    <option value="1">OracleDB</option>
-    <option value="2">MongoDB</option>
-    <option value="3">PostgresSQL</option>
-  </select>
-</div>
-    
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+              </div>
+              <select class="custom-select" id="serverName" required>
+                <option selected disabled hidden>Choose...</option>
+                <option value="Oracle">OracleDB</option>
+              </select>
+            </div>
+
           </div>
           <div class="form-group">
-            <label for="databaseName">Database Connection:</label>
-            <input type="text" class="form-control" id="databaseName" placeholder="Enter Database link" name="databaseName" required>
+            <label for="databaseName">Hostname:</label>
+            <input type="text" class="form-control" id="databaseName" placeholder="ex: jon_host.dot.com" name="databaseName" required>
           </div>
           <div class="form-group">
-            <label for="userName" required >Username:</label>
-            <input type="text" class="form-control" id="userName" placeholder="Enter  Username" name="userName" required>
+            <label for="databaseName">Enter Port Number:</label>
+            <input type="number" class="form-control" id="databaseName" placeholder="ex: 8080" name="databaseName" required>
+          </div>
+          <div class="form-group">
+            <label for="userName" required>Username:</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter Username" name="userName" required>
           </div>
           <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+
           </div>
+
+          <div class="form-group">
+            <label for="database1">Database Name</label>
+            <input type="text" class="form-control" id="database1" placeholder="Enter DB name to use" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="database2" placeholder="Enter second DB name (optional)">
+          </div>
+
           <button type="submit" class="btn btn-primary">Connect</button>
         </form>
-        
+
       </div>
     </div>
   </div>
 
-    <footer class="footer mt-auto py-3 bg-secondary">
+  <footer class="footer mt-auto py-3 bg-secondary">
     <div class="container text-center ">
       <span id="foottext" class="text-white">© 2023 Database Comparison Tool</span>
     </div>
   </footer>
 
   <!-- jQuery and Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8bc"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8bc" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- <!-- Your JS -->
+  <!-- Your JS -->
   <script src="ServerConnect_script.js"></script>
 </body>
 
 </html>
-
