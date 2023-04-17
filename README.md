@@ -22,7 +22,7 @@
 - [x] [Home](https://codepen.io/Ridevrutahc/pen/BaqjexW) 
 - [x] [DBConnect](https://codepen.io/Ridevrutahc/pen/poxgGxV)
 - [x] [ServerConnect](https://codepen.io/Ridevrutahc/pen/vYVGmyo)
-- [ ] [TableView](https://codepen.io/Ridevrutahc/pen/OJBNzeL)
+- [x] [TableView](https://codepen.io/Ridevrutahc/pen/OJBNzeL)
 
 ## Currently working on: 
 Tableview html, uploading two csv/xlsx for comparison, one the javascript is done i will try to connect it to db and render mock tables for comparison
