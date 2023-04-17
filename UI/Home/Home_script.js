@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       toggleBtn.innerHTML = 'Dark Mode';
     }
-  });
+  }); 
 })
