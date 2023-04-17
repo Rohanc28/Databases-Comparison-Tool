@@ -25,4 +25,4 @@
 - [x] [TableView](https://codepen.io/Ridevrutahc/pen/OJBNzeL)
 
 ## Currently working on: 
-Tableview html, uploading two csv/xlsx for comparison, one the javascript is done i will try to connect it to db and render mock tables for comparison
+Added both table renderview, added support for xlsx in both, currently working on ui to show both files parallely when uploaded in med-large res
