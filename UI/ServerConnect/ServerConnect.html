@@ -40,55 +40,103 @@
     </div>
   </nav>
   <!-- MAIN BODY STARTS HERE -->
-  <div class="container my-5">
+  <div class="container my-6">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
+      <div class="col-md-8 offset-md-2">
         <!-- HEADING FOR DIV> -->
         <h2 class="text-center mb-4">Database Comparison User Tool</h2>
+        <div class="container my-5">
+          <div class="row">
+            <div class="col">
+              <form id="server-form-1" method="post" href="C:\Users\rchaturvedi\Desktop\DB Project\Databases-Comparison-Tool-main\UI\TableView\TableView.html">
+                <div class="form-group">
+                  <label for="serverName">Server Name:</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                    </div>
+                    <select class="custom-select" id="serverName1" required>
+                      <option selected disabled hidden>Choose...</option>
+                      <option value="Oracle">OracleDB</option>
+                    </select>
+                  </div>
 
-        <form id="server-form" method="post" href="C:\Users\rchaturvedi\Desktop\DB Project\Databases-Comparison-Tool-main\UI\TableView\TableView.html">
-          <div class="form-group">
-            <label for="serverName">Server Name:</label>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Options</label>
-              </div>
-              <select class="custom-select" id="serverName" required>
-                <option selected disabled hidden>Choose...</option>
-                <option value="Oracle">OracleDB</option>
-              </select>
+                </div>
+                <div class="form-group">
+                  <label for="databaseName">Hostname:</label>
+                  <input type="text" class="form-control" id="databaseName1" placeholder="ex: jon_host.dot.com" name="databaseName" required>
+                </div>
+                <div class="form-group">
+                  <label for="databaseName">Enter Port Number:</label>
+                  <input type="number" class="form-control" id="portNumber1" placeholder="ex: 8080" name="databaseName" required>
+                </div>
+                <div class="form-group">
+                  <label for="userName" required>Username:</label>
+                  <input type="text" class="form-control" id="username1" placeholder="Enter Username" name="userName" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password1" placeholder="Enter password" name="password" required>
+
+                </div>
+                <!--
+                <div class="form-group">
+                  <label for="database1">Database Name</label>
+                  <input type="text" class="form-control" id="database1" placeholder="Enter DB name to use" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="database2" placeholder="Enter second DB name (optional)">
+                </div>
+                -->
+                <button id="btn1" type="submit" class="btn btn-primary">Connect</button>
+              </form>
             </div>
+            <div class="col">
+              <form id="server-form-2" method="post" href="C:\Users\rchaturvedi\Desktop\DB Project\Databases-Comparison-Tool-main\UI\TableView\TableView.html">
+                <div class="form-group">
+                  <label for="serverName">Server Name:</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                    </div>
+                    <select class="custom-select" id="serverName2" required>
+                      <option selected disabled hidden>Choose...</option>
+                      <option value="Oracle">OracleDB</option>
+                    </select>
+                  </div>
 
-          </div>
-          <div class="form-group">
-            <label for="databaseName">Hostname:</label>
-            <input type="text" class="form-control" id="databaseName" placeholder="ex: jon_host.dot.com" name="databaseName" required>
-          </div>
-          <div class="form-group">
-            <label for="databaseName">Enter Port Number:</label>
-            <input type="number" class="form-control" id="databaseName" placeholder="ex: 8080" name="databaseName" required>
-          </div>
-          <div class="form-group">
-            <label for="userName" required>Username:</label>
-            <input type="text" class="form-control" id="userName" placeholder="Enter Username" name="userName" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+                </div>
+                <div class="form-group">
+                  <label for="databaseName">Hostname:</label>
+                  <input type="text" class="form-control" id="databaseName2" placeholder="ex: jon_host.dot.com" name="databaseName" required>
+                </div>
+                <div class="form-group">
+                  <label for="databaseName">Enter Port Number:</label>
+                  <input type="number" class="form-control" id="portNumber2" placeholder="ex: 8080" name="databaseName" required>
+                </div>
+                <div class="form-group">
+                  <label for="userName" required>Username:</label>
+                  <input type="text" class="form-control" id="username2" placeholder="Enter Username" name="userName" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password2" placeholder="Enter password" name="password" required>
 
+                </div>
+                <!--
+                <div class="form-group">
+                  <label for="database1">Database Name</label>
+                  <input type="text" class="form-control" id="database1" placeholder="Enter DB name to use" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="database2" placeholder="Enter second DB name (optional)">
+                </div>
+            -->
+                <button id="btn2" type="submit" class="btn btn-primary">Connect</button>
+              </form>
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="database1">Database Name</label>
-            <input type="text" class="form-control" id="database1" placeholder="Enter DB name to use" required>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="database2" placeholder="Enter second DB name (optional)">
-          </div>
-
-          <button type="submit" class="btn btn-primary">Connect</button>
-        </form>
-
+        </div>
       </div>
     </div>
   </div>
