@@ -25,5 +25,6 @@
 - [x] [TableView](https://codepen.io/Ridevrutahc/pen/OJBNzeL)
 
 ## Recent: 
-- Added both table renderview, added support for csv, xlsx in both
-- ui to show both files parallely when uploaded in med-large res and stay responsive for small screen as well
+- Added both table renderview, added support for csv, xlsx in both.
+- ui to show both files parallely when uploaded in med-large res and stay responsive for small screen as well.
+- added split connection forms to /ServerConnect with button spinners if respective form if fully filled.
