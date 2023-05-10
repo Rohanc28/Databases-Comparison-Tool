@@ -30,3 +30,4 @@
 - added split connection forms to /ServerConnect with button spinners if respective form if fully filled.
 - working on double server connection with individual sql query classes. retrurning and rendering data from db to the frontend.
 - working on frontend formdata control js for form validation for either and both forms, then submit "POST" to next url with data.
+- db + table connect success, table render ok (need dynamic settings for cols) working on toolbar + ops for db table comparison 
