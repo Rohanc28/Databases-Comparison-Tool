@@ -31,3 +31,5 @@
 - working on double server connection with individual sql query classes. retrurning and rendering data from db to the frontend.
 - working on frontend formdata control js for form validation for either and both forms, then submit "POST" to next url with data.
 - db conn ok, table render ok, working on toolbar for table comparison + ops 
+- PR#2 :Dealt with direct GET request url for submitForm, table connection, empty form, Modal pop up using JS by redirection to same URL. Started work on Toolbar (created compareMatch service + controller basic setup (needs jsp pages for render)) 
+- to do: complete jsp pages (modal popup?) for toolbar actions, render resultView with match/unique rows, add download functionality. optimize comparison code, optimize space by using inplace delete row in any table (matching)
