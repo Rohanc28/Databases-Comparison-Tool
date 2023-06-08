@@ -67,7 +67,7 @@
 	<div class="container">
 		<div id="toolbar" class="row justify-content-center ">
 
-			<div class="column mx-5">
+			<div class="column ml-0 mr-5 pr-3">
 				<div class="label">Compare</div>
 				<div class="btn-group btn-group-fill">
 					<!-- Button trigger modal -->
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 
-			<div class="column mx-3">
+			<div class="column ml-0">
 				<div class="label">Save</div>
 				<div class="btn-group btn-group-fill">
 					<button href="" class="btn btn-primary">History</button>
